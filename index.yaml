@@ -3,12 +3,12 @@ entries:
   hello-service:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-08-19T17:05:29.796132903+05:00"
+    created: "2026-08-19T17:14:17.295803263+05:00"
     description: A tiny demo Node.js service
     digest: 995549af00d16e64803085566318ebecf7b785997fe3d856d7e6bf1916ba11c3
     name: hello-service
     type: application
     urls:
-    - https://opsbyabdullah.github.io/helm-charts/hello-service-0.1.0.tgz
+    - https://opsbyabdullah.github.io/helm-chart/hello-service-0.1.0.tgz
     version: 0.1.0
-generated: "2026-08-19T17:05:29.795867839+05:00"
+generated: "2026-08-19T17:14:17.295331711+05:00"
