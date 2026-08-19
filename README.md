@@ -19,19 +19,13 @@ Here is a high-level architecture diagram of how the traffic flows through Kuber
 
 ```mermaid
 graph TD
-    Client([User / Client]) -->|HTTP Request| Ingress[Ingress Controller]
-    Ingress -->|Routes traffic| SVC[Service: ClusterIP]
+    Client([🌐 User / Client]) -->|HTTP Request| Ingress[🚦 Ingress Controller]
+    Ingress -->|Routes traffic| SVC[⚙️ Service: ClusterIP]
     
     subgraph Kubernetes Cluster
-    SVC -->|Load Balances| Pod1(Pod 1: Node.js App)
-    SVC -->|Load Balances| Pod2(Pod 2: Node.js App)
+    SVC -->|Load Balances| Pod1(📦 Pod 1: Node.js App)
+    SVC -->|Load Balances| Pod2(📦 Pod 2: Node.js App)
     end
-    
-    style Client fill:#f9f,stroke:#333,stroke-width:2px
-    style Ingress fill:#bbf,stroke:#333,stroke-width:2px
-    style SVC fill:#fbb,stroke:#333,stroke-width:2px
-    style Pod1 fill:#bfb,stroke:#333,stroke-width:2px
-    style Pod2 fill:#bfb,stroke:#333,stroke-width:2px
 ```
 
 ---
